@@ -24,6 +24,10 @@ inputs:
     description: 'When dry run is true, Titan will not make any changes to Snowflake.'
     required: false
     default: 'false'
+  scope:
+    description: 'Scope limits which resources Titan will manage. Valid options: `account`, `database`, `schema`.'
+    required: false
+    default: 'account'
 runs:
   using: 'docker'
   image: 'Dockerfile'
