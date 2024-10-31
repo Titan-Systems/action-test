@@ -32,6 +32,10 @@ inputs:
     description: 'Name of the database to limit the scope to. Only valid when scope is `database`.'
     required: false
     default: None
+  schema:
+    description: 'Name of the schema to limit the scope to. Only valid when scope is `schema`.'
+    required: false
+    default: None
 runs:
   using: 'docker'
   image: 'Dockerfile'
