@@ -1,6 +1,6 @@
 name: 'Titan Core Snowflake infrastructure as code-xyzzy'
 author: 'Titan Systems, Inc'
-description: 'qqq'
+description: 'Deploy to Snowflake with Titan'
 runs:
   using: 'docker'
   image: 'Dockerfile'
