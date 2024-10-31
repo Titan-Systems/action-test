@@ -1,0 +1,3 @@
+snowflake-connector-python
+pyyaml
+titan-core>=0.10
