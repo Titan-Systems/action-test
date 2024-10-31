@@ -20,6 +20,10 @@ inputs:
       (e.g. vars: '{"var_name": "var_value"}').
     required: false
     default: None
+  dry-run:
+    description: 'When dry run is true, Titan will not make any changes to Snowflake.'
+    required: false
+    default: 'false'
 runs:
   using: 'docker'
   image: 'Dockerfile'
