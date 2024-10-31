@@ -28,6 +28,10 @@ inputs:
     description: 'Scope limits which resources Titan will manage. Valid options: `account`, `database`, `schema`.'
     required: false
     default: 'account'
+  database:
+    description: 'Name of the database to limit the scope to. Only valid when scope is `database`.'
+    required: false
+    default: None
 runs:
   using: 'docker'
   image: 'Dockerfile'
