@@ -1,5 +1,5 @@
 name: 'Titan Core Snowflake infrastructure as code-xyzzy'
-author: 'qqq'
+author: 'Titan Systems, Inc'
 description: 'qqq'
 runs:
   using: 'docker'
