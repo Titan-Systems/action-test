@@ -1,6 +1,11 @@
 name: 'Titan Core Snowflake infrastructure as code-xyzzy'
 author: 'Titan Systems, Inc'
 description: 'Deploy to Snowflake with Titan'
+inputs:
+  run-mode:
+    description: 'Run mode determines which actions can be performed. Valid options: `create-or-update` (never drops resources), `sync` (full resource control).'
+    required: true
+    default: 'create-or-update'
 runs:
   using: 'docker'
   image: 'Dockerfile'
