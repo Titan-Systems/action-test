@@ -14,6 +14,12 @@ inputs:
     description: 'Allowlist is a comma-separated list of resource types that Titan is allowed to manage. If not provided, Titan will manage all resources.'
     required: false
     default: 'all'
+  vars:
+    description: >-
+      Dynamic values, specified as a JSON dictionary
+      (e.g. vars: '{"var_name": "var_value"}').
+    required: false
+    default: None
 runs:
   using: 'docker'
   image: 'Dockerfile'
